@@ -1,0 +1,31 @@
+server:
+  port: 9090
+spring:
+  profiles:
+    active: native
+  security:
+    user:
+      name: admin
+      password: admin
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+            - file:///C:/Temp/
+#        git:
+#          uri: https://github.com/pravintarte/config.git
+#          username: ${git.username}
+#          password: ${git.password}
+#          clone-on-start: true
+#          basedir: C://Temp//config-server
+#encrypt:
+#  key-store:
+#    location: classpath:jks/config-server.jks
+#    password: test1234
+#    secret: test1234
+#    type: jks
+#    alias: config-server-key
+
+
